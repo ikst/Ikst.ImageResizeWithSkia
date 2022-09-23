@@ -5,7 +5,7 @@ on:
   push:
     branches: [ master ]
     paths:
-    - "Ikst.ImageUtil/*.csproj"
+    - "Ikst.ImageResizeWithSkia/*.csproj"
   pull_request:
     branches: [ master ]
 
