@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ikst.ImageResizeWithSkia", "Ikst.ImageResizeWithSkia\Ikst.ImageResizeWithSkia.csproj", "{A1473EF2-C184-4961-81DB-301BB3AB7289}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{163DC3DB-E01D-4D30-9869-FF08C984E9FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1473EF2-C184-4961-81DB-301BB3AB7289}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1473EF2-C184-4961-81DB-301BB3AB7289}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1473EF2-C184-4961-81DB-301BB3AB7289}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1473EF2-C184-4961-81DB-301BB3AB7289}.Release|Any CPU.Build.0 = Release|Any CPU
+		{163DC3DB-E01D-4D30-9869-FF08C984E9FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{163DC3DB-E01D-4D30-9869-FF08C984E9FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{163DC3DB-E01D-4D30-9869-FF08C984E9FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{163DC3DB-E01D-4D30-9869-FF08C984E9FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60B792D6-077F-4ED6-8ED2-D62B5D2CC900}
+	EndGlobalSection
+EndGlobal
