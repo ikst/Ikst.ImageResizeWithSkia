@@ -170,7 +170,8 @@ namespace Ikst.ImageResizeWithSkia
                     using (SKCanvas canvas = surface.Canvas)
                     {
 
-                        canvas.Clear(backColor);
+                        // Transparentでない場合のみ適用する
+                        if (backColor != SKColors.Transparent)  canvas.Clear(backColor);
 
                         var s = ConvertUniformSize(srcBitmap.Width, srcBitmap.Height, width, height, toFill);
                         using (SKBitmap scaledBitmap = srcBitmap.Resize(new SKImageInfo((int)s.Width, (int)s.Height), fq))
