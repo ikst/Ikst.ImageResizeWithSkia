@@ -3,9 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ikst.ImageResizeWithSkia", "Ikst.ImageResizeWithSkia\Ikst.ImageResizeWithSkia.csproj", "{A1473EF2-C184-4961-81DB-301BB3AB7289}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ikst.ImageResizeWithSkia", "Ikst.ImageResizeWithSkia\Ikst.ImageResizeWithSkia.csproj", "{A1473EF2-C184-4961-81DB-301BB3AB7289}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{163DC3DB-E01D-4D30-9869-FF08C984E9FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTest", "UnitTest\UnitTest.csproj", "{163DC3DB-E01D-4D30-9869-FF08C984E9FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Others", "Others", "{F519C688-8536-4BE5-BB74-B2491F99EA3F}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{2B3C5301-589B-4317-85A1-93A9DB03E8AD}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +34,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B3C5301-589B-4317-85A1-93A9DB03E8AD} = {F519C688-8536-4BE5-BB74-B2491F99EA3F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {60B792D6-077F-4ED6-8ED2-D62B5D2CC900}
