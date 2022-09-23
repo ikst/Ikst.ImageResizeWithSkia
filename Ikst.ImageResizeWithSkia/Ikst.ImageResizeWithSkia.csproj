@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+	  <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>ikst</Authors>
     <Description>Image resizing library using SkiaSharp</Description>
@@ -13,12 +13,17 @@
 https://github.com/ikst/Ikst.ImageResizeWithSkia/blob/master/README.md</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/ikst/Ikst.ImageResizeWithSkia</RepositoryUrl>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <Version>0.0.2$(VersionPrefix)</Version>
+    <Version>0.0.3$(VersionPrefix)</Version>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="SkiaSharp" Version="2.88.2" />
     <PackageReference Include="SkiaSharp.NativeAssets.Linux" Version="2.88.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
 
 </Project>
