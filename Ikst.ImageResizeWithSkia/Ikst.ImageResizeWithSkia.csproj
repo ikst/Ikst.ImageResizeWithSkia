@@ -13,17 +13,27 @@
 https://github.com/ikst/Ikst.ImageResizeWithSkia/blob/master/README.md</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/ikst/Ikst.ImageResizeWithSkia</RepositoryUrl>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <Version>0.0.4$(VersionPrefix)</Version>
+    <Version>0.0.5$(VersionPrefix)</Version>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Properties\**" />
+    <EmbeddedResource Remove="Properties\**" />
+    <None Remove="Properties\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="SkiaSharp" Version="2.88.2" />
     <PackageReference Include="SkiaSharp.NativeAssets.Linux" Version="2.88.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Properties\" />
   </ItemGroup>
 
 </Project>
