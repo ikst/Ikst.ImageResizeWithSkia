@@ -4,6 +4,16 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>ikst</Authors>
+    <Description>Image resizing library using SkiaSharp</Description>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>SkiaSharp ImageResize</PackageTags>
+    <PackageReleaseNotes>Please check the following.
+https://github.com/ikst/Ikst.ImageResizeWithSkia/blob/master/README.md</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/ikst/Ikst.ImageResizeWithSkia</RepositoryUrl>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <Version>0.0.1$(VersionPrefix)</Version>
   </PropertyGroup>
 
   <ItemGroup>

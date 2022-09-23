@@ -97,6 +97,18 @@ namespace Ikst.ImageResizeWithSkia
         }
 
 
+        /// <summary>
+        /// 画像をリサイズします
+        /// </summary>
+        /// <param name="sKCodec"></param>
+        /// <param name="width"></param>
+        /// <param name="height"></param>
+        /// <param name="mode"></param>
+        /// <param name="backColor"></param>
+        /// <param name="imgFmt"></param>
+        /// <param name="quality"></param>
+        /// <param name="fq"></param>
+        /// <returns></returns>
         public static byte[] Resize(SKCodec sKCodec, int width, int height, ResizeMode mode, SKColor backColor, SKEncodedImageFormat imgFmt, int quality = 90, SKFilterQuality fq = SKFilterQuality.Medium)
         {
 
