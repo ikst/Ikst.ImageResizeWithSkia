@@ -1,8 +1,5 @@
-画像の縦横比を崩さずにリサイズ出来るライブラリです。<br>
+画像の縦横比を崩さずにリサイズ出来るライブラリです。  
 画像変換処理には[SkiaSharp](https://github.com/mono/SkiaSharp)を利用します。
-
-
-<br>
 
 
 # usage
@@ -31,10 +28,6 @@ imgFmt | [SKEncodedImageFormat](https://learn.microsoft.com/en-us/dotnet/api/ski
 quality | int |画像出力時の品質。0～100で指定します。<br>デフォルトは90です。
 fq | [SKFilterQuality](https://learn.microsoft.com/ja-jp/dotnet/api/skiasharp.skfilterquality) |SkiaSharpのリサイズメソッドの処理品質。
 
-
-
-<br>
-<br>
 
 
 # ResizeMode
