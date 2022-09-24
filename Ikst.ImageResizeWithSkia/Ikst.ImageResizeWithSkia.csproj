@@ -13,7 +13,7 @@
 https://github.com/ikst/Ikst.ImageResizeWithSkia/blob/master/README.md</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/ikst/Ikst.ImageResizeWithSkia</RepositoryUrl>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <Version>0.0.7$(VersionPrefix)</Version>
+    <Version>0.0.8$(VersionPrefix)</Version>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
