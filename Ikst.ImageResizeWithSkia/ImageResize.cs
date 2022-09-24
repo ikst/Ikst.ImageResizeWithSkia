@@ -10,13 +10,12 @@ using System.Threading.Tasks;
 namespace Ikst.ImageResizeWithSkia
 {
 
-    /// <summary>
-    /// 画像変換
-    /// </summary>
+    /// <summary>Image Resize Utility</summary>
     public class ImageResize
     {
         #region OverLoads
 
+        /// <summary>Image Resize</summary>
         /// <see cref="Resize(string, int, int, ResizeMode, SKColor, SKEncodedImageFormat, int, SKFilterQuality)"/>
         public static byte[] Resize(string filePath, int width, int height, ResizeMode mode)
         {
@@ -25,6 +24,7 @@ namespace Ikst.ImageResizeWithSkia
                 return Resize(fs, width, height, mode);
             }
         }
+        /// <summary>Image Resize</summary>
         public static byte[] Resize(byte[] bytes, int width, int height, ResizeMode mode)
         {
             using (MemoryStream ms = new MemoryStream(bytes))
@@ -32,6 +32,7 @@ namespace Ikst.ImageResizeWithSkia
                 return Resize(ms, width, height, mode);
             }
         }
+        /// <summary>Image Resize</summary>
         public static byte[] Resize(Stream st, int width, int height, ResizeMode mode)
         {
             using (SKCodec sKCodec = SKCodec.Create(st))
@@ -39,6 +40,7 @@ namespace Ikst.ImageResizeWithSkia
                 return Resize(sKCodec, width, height, mode);
             }
         }
+        /// <summary>Image Resize</summary>
         public static byte[] Resize(SKCodec sKCodec, int width, int height, ResizeMode mode)
         {
             var backColor = SKColors.Transparent;
@@ -47,7 +49,7 @@ namespace Ikst.ImageResizeWithSkia
         }
 
 
-
+        /// <summary>Image Resize</summary>
         public static byte[] Resize(string filePath, int width, int height, ResizeMode mode, SKColor backColor)
         {
             using (FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read))
@@ -55,6 +57,7 @@ namespace Ikst.ImageResizeWithSkia
                 return Resize(fs, width, height, mode, backColor);
             }
         }
+        /// <summary>Image Resize</summary>
         public static byte[] Resize(byte[] bytes, int width, int height, ResizeMode mode, SKColor backColor)
         {
             using (MemoryStream ms = new MemoryStream(bytes))
@@ -62,6 +65,7 @@ namespace Ikst.ImageResizeWithSkia
                 return Resize(ms, width, height, mode, backColor);
             }
         }
+        /// <summary>Image Resize</summary>
         public static byte[] Resize(Stream st, int width, int height, ResizeMode mode, SKColor backColor)
         {
             using (SKCodec sKCodec = SKCodec.Create(st))
@@ -69,13 +73,14 @@ namespace Ikst.ImageResizeWithSkia
                 return Resize(sKCodec, width, height, mode, backColor);
             }
         }
+        /// <summary>Image Resize</summary>
         public static byte[] Resize(SKCodec sKCodec, int width, int height, ResizeMode mode, SKColor backColor)
         {
             var fmt = sKCodec.EncodedFormat;
             return Resize(sKCodec, width, height, mode, backColor, fmt);
         }
 
-
+        /// <summary>Image Resize</summary>
         public static byte[] Resize(string filePath, int width, int height, ResizeMode mode, SKEncodedImageFormat fmt)
         {
             using (FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read))
@@ -83,6 +88,7 @@ namespace Ikst.ImageResizeWithSkia
                 return Resize(fs, width, height, mode, fmt);
             }
         }
+        /// <summary>Image Resize</summary>
         public static byte[] Resize(byte[] bytes, int width, int height, ResizeMode mode, SKEncodedImageFormat fmt)
         {
             using (MemoryStream ms = new MemoryStream(bytes))
@@ -90,6 +96,7 @@ namespace Ikst.ImageResizeWithSkia
                 return Resize(ms, width, height, mode, fmt);
             }
         }
+        /// <summary>Image Resize</summary>
         public static byte[] Resize(Stream st, int width, int height, ResizeMode mode, SKEncodedImageFormat fmt)
         {
             using (SKCodec sKCodec = SKCodec.Create(st))
@@ -97,13 +104,14 @@ namespace Ikst.ImageResizeWithSkia
                 return Resize(sKCodec, width, height, mode, fmt);
             }
         }
+        /// <summary>Image Resize</summary>
         public static byte[] Resize(SKCodec sKCodec, int width, int height, ResizeMode mode, SKEncodedImageFormat fmt)
         {
             var backColor = SKColors.Transparent;
             return Resize(sKCodec, width, height, mode, backColor, fmt);
         }
 
-
+        /// <summary>Image Resize</summary>
         public static byte[] Resize(string filePath, int width, int height, ResizeMode mode, SKColor backColor, SKEncodedImageFormat fmt, int quality = 90, SKFilterQuality fq = SKFilterQuality.Medium)
         {
             using (FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read))
@@ -111,6 +119,7 @@ namespace Ikst.ImageResizeWithSkia
                 return Resize(fs, width, height, mode, backColor, fmt, quality, fq);
             }
         }
+        /// <summary>Image Resize</summary>
         public static byte[] Resize(byte[] bytes, int width, int height, ResizeMode mode, SKColor backColor, SKEncodedImageFormat fmt, int quality = 90, SKFilterQuality fq = SKFilterQuality.Medium)
         {
             using (MemoryStream ms = new MemoryStream(bytes))
@@ -118,6 +127,7 @@ namespace Ikst.ImageResizeWithSkia
                 return Resize(ms, width, height, mode, backColor, fmt, quality, fq);
             }
         }
+        /// <summary>Image Resize</summary>
         public static byte[] Resize(Stream st, int width, int height, ResizeMode mode, SKColor backColor, SKEncodedImageFormat fmt, int quality = 90, SKFilterQuality fq = SKFilterQuality.Medium)
         {
             using (SKCodec sKCodec = SKCodec.Create(st))
@@ -128,9 +138,7 @@ namespace Ikst.ImageResizeWithSkia
 
         #endregion
 
-        /// <summary>
-        /// 画像をリサイズします
-        /// </summary>
+        /// <summary>Image Resize</summary>
         public static byte[] Resize(SKCodec sKCodec, int width, int height, ResizeMode mode, SKColor backColor, SKEncodedImageFormat imgFmt, int quality = 90, SKFilterQuality fq = SKFilterQuality.Medium)
         {
 

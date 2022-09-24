@@ -257,61 +257,61 @@ namespace UnitTest
             var landscape = CreateTestImage(750, 500, SKEncodedImageFormat.Jpeg);
 
             // ÉeÉXÉgê›íË
-            SKColor color = SKColors.Blue;
-            SKEncodedImageFormat fmt = SKEncodedImageFormat.Jpeg;
+            SKColor color = SKColor.Parse("80FF0000"); //SKColors.Blue;
+            SKEncodedImageFormat fmt = SKEncodedImageFormat.Png;
             int quality = 50;
             SKFilterQuality fq = SKFilterQuality.High;
 
             // ----------------ê≥ï˚å`----------------
-            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Source.jpg"), square);
-            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®ê≥ï˚_Default.jpg"), ImageResize.Resize(square, 200, 200, ResizeMode.Default, color, fmt, quality, fq));
-            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®â°í∑_Default.jpg"), ImageResize.Resize(square, 200, 100, ResizeMode.Default, color, fmt, quality, fq));
-            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®ècí∑_Default.jpg"), ImageResize.Resize(square, 100, 200, ResizeMode.Default, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Source.png"), square);
+            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®ê≥ï˚_Default.png"), ImageResize.Resize(square, 200, 200, ResizeMode.Default, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®â°í∑_Default.png"), ImageResize.Resize(square, 200, 100, ResizeMode.Default, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®ècí∑_Default.png"), ImageResize.Resize(square, 100, 200, ResizeMode.Default, color, fmt, quality, fq));
                                                              
-            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®ê≥ï˚_Uniform.jpg"), ImageResize.Resize(square, 200, 200, ResizeMode.Uniform, color, fmt, quality, fq));
-            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®â°í∑_Uniform.jpg"), ImageResize.Resize(square, 200, 100, ResizeMode.Uniform, color, fmt, quality, fq));
-            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®ècí∑_Uniform.jpg"), ImageResize.Resize(square, 100, 200, ResizeMode.Uniform, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®ê≥ï˚_Uniform.png"), ImageResize.Resize(square, 200, 200, ResizeMode.Uniform, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®â°í∑_Uniform.png"), ImageResize.Resize(square, 200, 100, ResizeMode.Uniform, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®ècí∑_Uniform.png"), ImageResize.Resize(square, 100, 200, ResizeMode.Uniform, color, fmt, quality, fq));
 
-            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®ê≥ï˚_UniformToFill.jpg"), ImageResize.Resize(square, 200, 200, ResizeMode.UniformToFill, color, fmt, quality, fq));
-            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®â°í∑_UniformToFill.jpg"), ImageResize.Resize(square, 200, 100, ResizeMode.UniformToFill, color, fmt, quality, fq));
-            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®ècí∑_UniformToFill.jpg"), ImageResize.Resize(square, 100, 200, ResizeMode.UniformToFill, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®ê≥ï˚_UniformToFill.png"), ImageResize.Resize(square, 200, 200, ResizeMode.UniformToFill, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®â°í∑_UniformToFill.png"), ImageResize.Resize(square, 200, 100, ResizeMode.UniformToFill, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®ècí∑_UniformToFill.png"), ImageResize.Resize(square, 100, 200, ResizeMode.UniformToFill, color, fmt, quality, fq));
 
-            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®â°éwíËñ≥Çµ.jpg"), ImageResize.Resize(square, 0, 100, ResizeMode.Default, color, fmt, quality, fq));
-            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®ècéwíËñ≥Çµ.jpg"), ImageResize.Resize(square, 100, 0, ResizeMode.Default, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®â°éwíËñ≥Çµ.png"), ImageResize.Resize(square, 0, 100, ResizeMode.Default, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ê≥ï˚Å®ècéwíËñ≥Çµ.png"), ImageResize.Resize(square, 100, 0, ResizeMode.Default, color, fmt, quality, fq));
 
             // ----------------ècí∑----------------
-            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Source.jpg"), portrait);
-            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®ê≥ï˚_Default.jpg"), ImageResize.Resize(portrait, 200, 200, ResizeMode.Default, color, fmt, quality, fq));
-            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®â°í∑_Default.jpg"), ImageResize.Resize(portrait, 200, 100, ResizeMode.Default, color, fmt, quality, fq));
-            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®ècí∑_Default.jpg"), ImageResize.Resize(portrait, 100, 200, ResizeMode.Default, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Source.png"), portrait);
+            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®ê≥ï˚_Default.png"), ImageResize.Resize(portrait, 200, 200, ResizeMode.Default, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®â°í∑_Default.png"), ImageResize.Resize(portrait, 200, 100, ResizeMode.Default, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®ècí∑_Default.png"), ImageResize.Resize(portrait, 100, 200, ResizeMode.Default, color, fmt, quality, fq));
                                                              
-            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®ê≥ï˚_Uniform.jpg"), ImageResize.Resize(portrait, 200, 200, ResizeMode.Uniform, color, fmt, quality, fq));
-            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®â°í∑_Uniform.jpg"), ImageResize.Resize(portrait, 200, 100, ResizeMode.Uniform, color, fmt, quality, fq));
-            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®ècí∑_Uniform.jpg"), ImageResize.Resize(portrait, 100, 200, ResizeMode.Uniform, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®ê≥ï˚_Uniform.png"), ImageResize.Resize(portrait, 200, 200, ResizeMode.Uniform, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®â°í∑_Uniform.png"), ImageResize.Resize(portrait, 200, 100, ResizeMode.Uniform, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®ècí∑_Uniform.png"), ImageResize.Resize(portrait, 100, 200, ResizeMode.Uniform, color, fmt, quality, fq));
                                                            
-            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®ê≥ï˚_UniformToFill.jpg"), ImageResize.Resize(portrait, 200, 200, ResizeMode.UniformToFill, color, fmt, quality, fq));
-            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®â°í∑_UniformToFill.jpg"), ImageResize.Resize(portrait, 200, 100, ResizeMode.UniformToFill, color, fmt, quality, fq));
-            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®ècí∑_UniformToFill.jpg"), ImageResize.Resize(portrait, 100, 200, ResizeMode.UniformToFill, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®ê≥ï˚_UniformToFill.png"), ImageResize.Resize(portrait, 200, 200, ResizeMode.UniformToFill, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®â°í∑_UniformToFill.png"), ImageResize.Resize(portrait, 200, 100, ResizeMode.UniformToFill, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®ècí∑_UniformToFill.png"), ImageResize.Resize(portrait, 100, 200, ResizeMode.UniformToFill, color, fmt, quality, fq));
 
-            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®â°éwíËñ≥Çµ.jpg"), ImageResize.Resize(portrait, 0, 100, ResizeMode.Default, color, fmt, quality, fq));
-            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®ècéwíËñ≥Çµ.jpg"), ImageResize.Resize(portrait, 100, 0, ResizeMode.Default, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®â°éwíËñ≥Çµ.png"), ImageResize.Resize(portrait, 0, 100, ResizeMode.Default, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "ècí∑Å®ècéwíËñ≥Çµ.png"), ImageResize.Resize(portrait, 100, 0, ResizeMode.Default, color, fmt, quality, fq));
 
             // ----------------â°í∑----------------
-            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Source.jpg"), landscape);
-            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®ê≥ï˚_Default.jpg"), ImageResize.Resize(landscape, 200, 200, ResizeMode.Default, color, fmt, quality, fq));
-            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®â°í∑_Default.jpg"), ImageResize.Resize(landscape, 200, 100, ResizeMode.Default, color, fmt, quality, fq));
-            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®ècí∑_Default.jpg"), ImageResize.Resize(landscape, 100, 200, ResizeMode.Default, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Source.png"), landscape);
+            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®ê≥ï˚_Default.png"), ImageResize.Resize(landscape, 200, 200, ResizeMode.Default, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®â°í∑_Default.png"), ImageResize.Resize(landscape, 200, 100, ResizeMode.Default, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®ècí∑_Default.png"), ImageResize.Resize(landscape, 100, 200, ResizeMode.Default, color, fmt, quality, fq));
                                                          
-            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®ê≥ï˚_Uniform.jpg"), ImageResize.Resize(landscape, 200, 200, ResizeMode.Uniform, color, fmt, quality, fq));
-            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®â°í∑_Uniform.jpg"), ImageResize.Resize(landscape, 200, 100, ResizeMode.Uniform, color, fmt, quality, fq));
-            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®â°í∑_Uniform.jpg"), ImageResize.Resize(landscape, 100, 200, ResizeMode.Uniform, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®ê≥ï˚_Uniform.png"), ImageResize.Resize(landscape, 200, 200, ResizeMode.Uniform, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®â°í∑_Uniform.png"), ImageResize.Resize(landscape, 200, 100, ResizeMode.Uniform, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®â°í∑_Uniform.png"), ImageResize.Resize(landscape, 100, 200, ResizeMode.Uniform, color, fmt, quality, fq));
                                                        
-            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®ê≥ï˚_UniformToFill.jpg"), ImageResize.Resize(landscape, 200, 200, ResizeMode.UniformToFill, color, fmt, quality, fq));
-            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®â°í∑_UniformToFill.jpg"), ImageResize.Resize(landscape, 200, 100, ResizeMode.UniformToFill, color, fmt, quality, fq));
-            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®ècí∑_UniformToFill.jpg"), ImageResize.Resize(landscape, 100, 200, ResizeMode.UniformToFill, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®ê≥ï˚_UniformToFill.png"), ImageResize.Resize(landscape, 200, 200, ResizeMode.UniformToFill, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®â°í∑_UniformToFill.png"), ImageResize.Resize(landscape, 200, 100, ResizeMode.UniformToFill, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®ècí∑_UniformToFill.png"), ImageResize.Resize(landscape, 100, 200, ResizeMode.UniformToFill, color, fmt, quality, fq));
 
-            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®â°éwíËñ≥Çµ.jpg"), ImageResize.Resize(landscape, 0, 100, ResizeMode.Default, color, fmt, quality, fq));
-            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®ècéwíËñ≥Çµ.jpg"), ImageResize.Resize(landscape, 100, 0, ResizeMode.Default, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®â°éwíËñ≥Çµ.png"), ImageResize.Resize(landscape, 0, 100, ResizeMode.Default, color, fmt, quality, fq));
+            File.WriteAllBytes(Path.Combine(outputDir, "â°í∑Å®ècéwíËñ≥Çµ.png"), ImageResize.Resize(landscape, 100, 0, ResizeMode.Default, color, fmt, quality, fq));
         }
 
 

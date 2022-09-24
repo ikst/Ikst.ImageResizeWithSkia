@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Ikst.ImageResizeWithSkia
 {
+    /// <summary>
+    /// 変換モード
+    /// </summary>
     public enum ResizeMode
     {
         /// <summary>何もしない。画像の引き伸ばしが発生する。</summary>
