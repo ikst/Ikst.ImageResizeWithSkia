@@ -36,6 +36,17 @@ namespace UnitTest
                 ImageResize.Resize(testImg, 0, 0, ResizeMode.Default, SKEncodedImageFormat.Jpeg);
             });
 
+            // 1‚Å‚à•ÏŠ·‚Å‚«‚é
+            ImageResize.Resize(testImg, 1, 1, ResizeMode.Default, SKEncodedImageFormat.Jpeg);
+            ImageResize.Resize(testImg, 1, 1, ResizeMode.Uniform, SKEncodedImageFormat.Jpeg);
+            ImageResize.Resize(testImg, 1, 1, ResizeMode.UniformToFill, SKEncodedImageFormat.Jpeg);
+            ImageResize.Resize(testImg, 0, 1, ResizeMode.Default, SKEncodedImageFormat.Jpeg);
+            ImageResize.Resize(testImg, 0, 1, ResizeMode.Uniform, SKEncodedImageFormat.Jpeg);
+            ImageResize.Resize(testImg, 0, 1, ResizeMode.UniformToFill, SKEncodedImageFormat.Jpeg);
+            ImageResize.Resize(testImg, 1, 0, ResizeMode.Default, SKEncodedImageFormat.Jpeg);
+            ImageResize.Resize(testImg, 1, 0, ResizeMode.Uniform, SKEncodedImageFormat.Jpeg);
+            ImageResize.Resize(testImg, 1, 0, ResizeMode.UniformToFill, SKEncodedImageFormat.Jpeg);
+
         }
 
         [Fact]
