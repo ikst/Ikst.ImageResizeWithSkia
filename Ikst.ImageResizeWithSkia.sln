@@ -17,6 +17,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "README", "README", "{FA9B9F45-2588-4950-97CD-F7F30B0315CC}"
+	ProjectSection(SolutionItems) = preProject
+		README\test.jpg = README\test.jpg
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +42,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2B3C5301-589B-4317-85A1-93A9DB03E8AD} = {F519C688-8536-4BE5-BB74-B2491F99EA3F}
+		{FA9B9F45-2588-4950-97CD-F7F30B0315CC} = {F519C688-8536-4BE5-BB74-B2491F99EA3F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {60B792D6-077F-4ED6-8ED2-D62B5D2CC900}
