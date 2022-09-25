@@ -32,16 +32,23 @@ fq | [SKFilterQuality](https://learn.microsoft.com/ja-jp/dotnet/api/skiasharp.sk
 
 # ResizeMode
 
+各モードごとの挙動は以下です。  
+![Original](https://raw.githubusercontent.com/ikst/Ikst.ImageResizeWithSkia/master/README/Original.png)
 
-|ResizeMode |description
-|---|---
-|Default | 何もしません。指定されたサイズ通りに画像の伸縮が発生します。
-|Uniform | 縦横比を維持したままリサイズします。<br>元画像と縦横比が異なる場合は余白が出来ます。
-|UniformToFill | 縦横比を維持したままリサイズします。<br>元画像と縦横比が異なる場合は一部が欠落します。 
-
-<br>
+この300(w)x300(h) の画像を 200(w)x100(h) にリサイズした画像をSampleに示します。
 
 
+|ResizeMode |Description|Sample
+|---|---|---
+|Default | 何もしません。指定されたサイズ通りに画像の伸縮が発生します。| ![Default](https://raw.githubusercontent.com/ikst/Ikst.ImageResizeWithSkia/master/README/Default.png)
+|Uniform | 縦横比を維持したままリサイズします。<br>元画像と縦横比が異なる場合は余白が出来ます。| ![Uniform](https://raw.githubusercontent.com/ikst/Ikst.ImageResizeWithSkia/master/README/Uniform.png)
+|UniformToFill | 縦横比を維持したままリサイズします。<br>元画像と縦横比が異なる場合は一部が欠落します。 | ![UniformToFill](https://raw.githubusercontent.com/ikst/Ikst.ImageResizeWithSkia/master/README/UniformToFill.png)
+
+  
+  
 ※WPF/XAMLの[Stretch列挙型](https://learn.microsoft.com/dotnet/api/system.windows.media.stretch?view=windowsdesktop-6.0)をイメージするとわかりやすいかも知れません。
+
+
+
 
 

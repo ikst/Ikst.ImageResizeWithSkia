@@ -18,6 +18,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "README", "README", "{FA9B9F45-2588-4950-97CD-F7F30B0315CC}"
+	ProjectSection(SolutionItems) = preProject
+		README\Default.png = README\Default.png
+		README\Original.png = README\Original.png
+		README\Uniform.png = README\Uniform.png
+		README\UniformToFill.png = README\UniformToFill.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

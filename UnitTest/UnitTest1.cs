@@ -263,12 +263,12 @@ namespace UnitTest
             output.WriteLine($"画像出力先：{outputDir}");
 
             // テスト画像
-            var square = CreateTestImage(500, 500, SKEncodedImageFormat.Jpeg);
-            var portrait = CreateTestImage(500, 750, SKEncodedImageFormat.Jpeg);
-            var landscape = CreateTestImage(750, 500, SKEncodedImageFormat.Jpeg);
+            var square = CreateTestImage(300, 300, SKEncodedImageFormat.Jpeg);
+            var portrait = CreateTestImage(250, 375, SKEncodedImageFormat.Jpeg);
+            var landscape = CreateTestImage(375, 250, SKEncodedImageFormat.Jpeg);
 
             // テスト設定
-            SKColor color = SKColor.Parse("80FF0000"); //SKColors.Blue;
+            SKColor color = SKColor.Parse("330000ff"); //SKColors.Blue;
             SKEncodedImageFormat fmt = SKEncodedImageFormat.Png;
             int quality = 50;
             SKFilterQuality fq = SKFilterQuality.High;
