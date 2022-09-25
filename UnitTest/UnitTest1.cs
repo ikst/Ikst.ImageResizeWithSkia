@@ -263,9 +263,9 @@ namespace UnitTest
             output.WriteLine($"画像出力先：{outputDir}");
 
             // テスト画像
-            var square = CreateTestImage(300, 300, SKEncodedImageFormat.Jpeg);
-            var portrait = CreateTestImage(250, 375, SKEncodedImageFormat.Jpeg);
-            var landscape = CreateTestImage(375, 250, SKEncodedImageFormat.Jpeg);
+            var square = CreateTestImage(250, 250, SKEncodedImageFormat.Jpeg);
+            var portrait = CreateTestImage(250, 300, SKEncodedImageFormat.Jpeg);
+            var landscape = CreateTestImage(300, 250, SKEncodedImageFormat.Jpeg);
 
             // テスト設定
             SKColor color = SKColor.Parse("330000ff"); //SKColors.Blue;
