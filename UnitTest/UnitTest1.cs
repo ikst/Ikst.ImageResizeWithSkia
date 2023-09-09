@@ -27,9 +27,10 @@ namespace UnitTest
         {
             var testImg = CreateTestImage(500, 500, SKEncodedImageFormat.Jpeg);
 
-            output.WriteLine($"画像出力先：JPG、PNG、WEBP以外は作成できない");
+            output.WriteLine($"画像出力先：JPG、PNG、WEBP以外は作成できない。");
+            // https://github.com/mono/SkiaSharp/issues/1130#issuecomment-583161267
             Assert.Throws<NullReferenceException>(() => {
-                ImageResize.Resize(testImg, 100, 100, ResizeMode.Default, SKEncodedImageFormat.Bmp);
+                ImageResize.Resize(testImg, 100, 100, ResizeMode.Default, SKEncodedImageFormat.Avif);
             });
 
             Assert.Throws<ArgumentNullException>(() => {
